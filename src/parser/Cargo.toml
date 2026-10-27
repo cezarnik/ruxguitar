@@ -1,0 +1,15 @@
+[package]
+name = "ruxguitar_parser"
+edition = "2024"
+version = "0.1.0"
+
+[lib]
+path = "mod.rs"
+
+[dependencies]
+thiserror = "2.0.12"
+encoding_rs = "0.8.35"
+log = "0.4.27"
+iced = { version = "0.13.0", features = ["advanced", "canvas", "tokio", "debug"] }
+nom = "8.0.0"
+

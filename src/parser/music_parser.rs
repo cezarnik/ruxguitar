@@ -1,8 +1,8 @@
-use crate::parser::primitive_parser::{
+use crate::primitive_parser::{
     parse_byte, parse_byte_size_string, parse_int, parse_int_byte_sized_string, parse_signed_byte,
     skip,
 };
-use crate::parser::song_parser::{
+use crate::song_parser::{
     convert_velocity, parse_beat_effects, parse_chord, parse_color, parse_duration,
     parse_measure_headers, parse_note_effects, Beat, GpVersion, Measure, Note, NoteEffect,
     NoteType, Song, Track, Voice, MAX_VOICES, QUARTER_TIME,

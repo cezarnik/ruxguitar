@@ -1,7 +1,7 @@
 /// Thanks to `TuxGuitar` for the reference implementation in `MidiSequenceParser.java`
-use crate::audio::midi_event::MidiEvent;
-use crate::audio::FIRST_TICK;
-use crate::parser::song_parser::{
+use crate::midi_event::MidiEvent;
+use crate::FIRST_TICK;
+use crate::song_parser::{
     Beat, BendEffect, BendPoint, HarmonicType, Measure, MeasureHeader, MidiChannel, Note, NoteType,
     Song, Track, TremoloBarEffect, TripletFeel, MIN_VELOCITY, QUARTER_TIME, SEMITONE_LENGTH,
     VELOCITY_INCREMENT,

@@ -1,9 +1,9 @@
-use crate::parser::music_parser::MusicParser;
-use crate::parser::primitive_parser::{
+use crate::music_parser::MusicParser;
+use crate::primitive_parser::{
     parse_bool, parse_byte, parse_byte_size_string, parse_int, parse_int_byte_sized_string,
     parse_int_sized_string, parse_short, parse_signed_byte, skip,
 };
-use crate::RuxError;
+use crate::error::RuxError;
 use nom::bytes::complete::take;
 use nom::combinator::{cond, flat_map, map};
 use nom::multi::count;
